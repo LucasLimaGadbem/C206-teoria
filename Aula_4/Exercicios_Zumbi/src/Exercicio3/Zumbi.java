@@ -1,4 +1,4 @@
-package Exercicio2;
+package Exercicio3;
 
 public class Zumbi {
 
