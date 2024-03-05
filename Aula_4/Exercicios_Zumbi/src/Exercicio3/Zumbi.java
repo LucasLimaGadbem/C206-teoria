@@ -6,7 +6,7 @@ public class Zumbi {
     String nome;
 
     double mostraVida(){
-        return vida;
+        return this.vida;
     }
 
     void tranfereVida(Zumbi zumbiAlvo, double quantia){
