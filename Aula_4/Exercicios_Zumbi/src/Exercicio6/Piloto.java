@@ -6,6 +6,11 @@ public class Piloto {
     boolean vilao;
 
     void soltaSuperPoder(){
-        System.out.println(nome+" soltando super poder");
+        if(vilao) {
+            System.out.println("A Vilã "+nome +" esta soltando o super poder");
+        }
+        else{
+            System.out.println("O "+nome+" esta soltando o super poder");
+        }
     }
 }

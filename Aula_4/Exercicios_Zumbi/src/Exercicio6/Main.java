@@ -21,8 +21,11 @@ public class Main {
         piloto1.nome = "Lucas";
         piloto2.nome = "Ana Clara";
 
-        System.out.println("Poder para iniciar");
+        piloto1.vilao = false;
+        piloto2.vilao = true;
+
         // soltando super poder
+        System.out.println("Poder para iniciar");
         piloto1.soltaSuperPoder();
         piloto2.soltaSuperPoder();
 
@@ -31,21 +34,21 @@ public class Main {
         kart1.pular();
         kart2.pular();
 
-        System.out.println("Curvaaaaaa");
         // fazendo drift
+        System.out.println("Curvaaaaaa");
         kart1.fazerDrift();
         kart2.fazerDrift();
 
-        System.out.println("Corre na reta para ganhar distancia");
         // soltando turbo
+        System.out.println("Uma Reta");
         kart1.soltarTurbo();
         kart2.soltarTurbo();
 
-        System.out.println("Informacoes dos karts");
         // mostrando informacoes dos karts
-        System.out.println("Kart1");
+        System.out.println("Informacoes dos karts");
+        System.out.println("Kart 1");
         kart1.motor.mostrarInfo();
-        System.out.println("Kart2");
+        System.out.println("Kart 2");
         kart2.motor.mostrarInfo();
     }
 }
