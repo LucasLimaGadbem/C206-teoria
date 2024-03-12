@@ -24,6 +24,9 @@ public class Main {
         piloto1.vilao = false;
         piloto2.vilao = true;
 
+        kart1.piloto = piloto1;
+        kart2.piloto = piloto2;
+
         // soltando super poder
         System.out.println("Poder para iniciar");
         piloto1.soltaSuperPoder();

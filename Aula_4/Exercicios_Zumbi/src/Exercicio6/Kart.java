@@ -7,7 +7,7 @@ public class Kart {
     Motor motor;
 
     public Kart(){
-        motor = new Motor();
+        this.motor = new Motor();
     }
 
     void pular(){
