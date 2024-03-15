@@ -11,7 +11,8 @@ public class Main {
         salgado2.nome = "BolinhaDeQueijo";
         salgado3.nome = "Kibe";
 
-        System.out.println("Cantina do Inatel");
+        cantina.nome = "Cantina do Inatel";
+
         cantina.addSalgado(salgado1);
         cantina.addSalgado(salgado2);
         cantina.addSalgado(salgado3);

@@ -1,20 +1,23 @@
 public class Cantina {
 
     String nome;
-    Salgado[] salgado = new Salgado[3];
+    Salgado[] salgados = new Salgado[3];
 
     public void addSalgado(Salgado novoSalgado){
-        for (int j = 0; j < salgado.length; j++) {
-            if(salgado[j] == null) {
-                salgado[j] = novoSalgado;
+        for (int j = 0; j < salgados.length; j++) {
+            if(salgados[j] == null) {
+                salgados[j] = novoSalgado;
                 break;
             }
         }
     }
 
     public void mostraInfo(){
-        for(int i = 0; i < salgado.length; i++){
-            System.out.println(i+" - "+salgado[i].nome);
+        System.out.println(nome);
+        for(int i = 0; i < salgados.length; i++){
+            if(salgados[i] != null) {
+                System.out.println(i + " - " + salgados[i].nome);
+            }
         }
     }
 
