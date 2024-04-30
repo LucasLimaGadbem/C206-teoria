@@ -6,4 +6,8 @@ public class Mineiro extends Classe{
         super(nome, idade);
         this.comida = comida;
     }
+
+    public String getComida() {
+        return comida;
+    }
 }

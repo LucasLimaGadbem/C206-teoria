@@ -24,11 +24,26 @@ public class Main {
         Collections.sort(classes);
 
         System.out.println("Mais velho para o mais novo");
-        
-        for (Classe c : classes){
-            System.out.println(c.getNome() + " " + c.getIdade());
+
+        /*
+        for (int i = 0; i < classes.size(); i++) {
+            System.out.println(classes.get(i).getNome());
         }
+        */
 
-
+        for (Classe c : classes){
+            if(c instanceof Paulista) {
+                Paulista px = (Paulista) c;
+                System.out.println(px.getNome() + " " + px.getIdade() + " " + px.getCapital());
+            }
+            if(c instanceof Mineiro){
+                Mineiro mx = (Mineiro) c;
+                System.out.println(mx.getNome() + " " + mx.getIdade() + " " + mx.getComida());
+            }
+            if(c instanceof Carioca) {
+                Carioca cx = (Carioca) c;
+                System.out.println(cx.getNome() + " " + cx.getIdade() + " " +  cx.getBebida());
+            }
+        }
     }
 }

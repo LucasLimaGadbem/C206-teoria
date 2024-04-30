@@ -10,7 +10,7 @@ public abstract class Classe implements Comparable <Classe>{
 
     @Override
     public int compareTo(Classe o) {
-        return Integer.compare(o.idade, idade);
+        return Integer.compare(o.idade, this.idade);
     }
 
     public String getNome() {

@@ -6,4 +6,8 @@ public class Carioca extends Classe{
         super(nome, idade);
         this.bebida = bebida;
     }
+
+    public String getBebida() {
+        return bebida;
+    }
 }

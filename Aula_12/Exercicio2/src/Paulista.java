@@ -6,4 +6,8 @@ public class Paulista extends Classe{
         super(nome, idade);
         this.capital = capital;
     }
+
+    public String getCapital() {
+        return capital;
+    }
 }
